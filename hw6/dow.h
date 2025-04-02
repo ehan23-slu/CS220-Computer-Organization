@@ -1,0 +1,1 @@
+long dow(long month, long day, long year);
