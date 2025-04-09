@@ -29,14 +29,14 @@ max4:
 
     // call max2(c,d)
     // put c and d in x0, x1
-    mov x4, x0,         // back up the returned max
+    mov x4, x0         // back up the returned max
     mov x0, x2          // move c into x0
     mov x1, x3          // move d into x1
-    b1 max2
+    bl max2
 
     // return value in x0
     mov x1, x4          // move previous max into x1
-    b1 max2             // get the max of the two maxes
+    bl max2             // get the max of the two maxes
 
     // final return value is in x0
     // restore x29 and x30 from the stack
@@ -46,4 +46,3 @@ max4:
 
     // return
     ret
-
