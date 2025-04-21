@@ -3,6 +3,6 @@
 #include <stdint.h>
 
 /**
- * Ye olde block comment
+ * This funciton computes power of int recursively
  */
 int64_t ipow(int64_t base, int64_t pow);
