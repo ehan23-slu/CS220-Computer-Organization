@@ -11,7 +11,7 @@ void logged_in() {
 
 // return true if password is valid
 int valid() {
-    char password[12];
+    char password[12];  // 12 bytes as char - 1 byte
     scanf("%s", password);
     return 0 == strcmp(password, "goodpass");
 }
