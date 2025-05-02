@@ -21,7 +21,7 @@ void digit_freq(int64_t n, int64_t freq[]) {
         freq[i] = 0;
     }
 
-    // if n is negative, convert to positive
+    // if n is negative, convert to positive (negate)
     if (n < 0) {
         n = -n;
     }
@@ -34,8 +34,8 @@ void digit_freq(int64_t n, int64_t freq[]) {
 
     // extract each digit and increment its count
     while (n > 0) {
-        int digit = n % 10;
-        freq[digit]++;
-        n = n / 10;
+        int digit = n % 10;      // get the last digit of n
+        freq[digit]++;           // increment the count for this digit
+        n = n / 10;              // remove the last digit from n
     }
 }
