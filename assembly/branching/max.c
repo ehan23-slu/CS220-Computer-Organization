@@ -18,11 +18,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (argc == 5) {
-        long biggest = max4(
-        atol(argv[1]), 
-        atol(argv[2]), 
-        atol(argv[3]), 
-        atol(argv[4]));
+        long biggest = max4( atol(argv[1]), atol(argv[2]), atol(argv[3]), atol(argv[4]));
         printf("Biggest: %ld\n", biggest);
     }
     return 0;

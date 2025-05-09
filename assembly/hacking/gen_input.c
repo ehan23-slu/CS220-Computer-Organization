@@ -3,7 +3,7 @@
 
 /*
  * need to put 0x0000005555550930 into the backed 
- * up LR value for main's staavk frame
+ * up LR value for main's stack frame
  * 
  * 12 bytes for password
  * 4 bytes of padding 

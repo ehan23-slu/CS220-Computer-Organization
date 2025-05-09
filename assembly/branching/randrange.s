@@ -12,7 +12,7 @@
 .align 2
 
 /*
- * long mod(long x, long y)ss
+ * long mod(long x, long y)
  * x - (x//y) * y
  */
 mod:
@@ -48,7 +48,6 @@ randrange:
     ldr x19, [sp, #16]
     ldr lr, [sp, #8]
     ldr fp, [sp]
-
     add sp, sp, #32
     
     ret

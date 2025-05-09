@@ -27,6 +27,7 @@ while:
     // x3 contains n % i 
     cmp x3, #0          // if mode is 0
     b.eq done           // loop is done
+    // or can be cbz x3, done
     
     // loop body
     add x1, x1, #1
@@ -36,4 +37,3 @@ done:
     // return i
     mov x0, x1
     ret
-
